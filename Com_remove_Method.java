@@ -1,6 +1,7 @@
 package com.practice.Collection_Methods;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
@@ -20,6 +21,7 @@ list.add(400);
 // add all method
 list.addAll(li);
 System.out.println(list);
+
 // remove method
 list.remove(3);
 System.out.println(list);
