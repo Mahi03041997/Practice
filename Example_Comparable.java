@@ -1,4 +1,4 @@
-package com.comparable.and.comparator.operators;
+package com.practice.Collection_Methods;
 
 import java.util.ArrayList;
 import java.util.Collections;

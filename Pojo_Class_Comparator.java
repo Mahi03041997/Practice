@@ -1,14 +1,15 @@
 package com.practice.Collection_Methods;
 
-public class Pojo_Class implements Comparable<Pojo_Class> {
+import java.util.Comparator;
+
+public class Pojo_Class_Comparator implements Comparable<Pojo_Class_Comparator> {
 	private int id;
 	private String name;
 	private float salary;
 	private long number;
 	
 	
-	
-	public Pojo_Class(int id, String name, float salary, long number) {
+	public Pojo_Class_Comparator(int id, String name, float salary, long number) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -44,14 +45,11 @@ public class Pojo_Class implements Comparable<Pojo_Class> {
 		return "Pojo_Class [id=" + id + ", name=" + name + ", salary=" + salary + ", number=" + number + "]";
 	}
 	@Override
-	public int compareTo(Pojo_Class o) {
+	public int compareTo(Pojo_Class_Comparator o) {
 		// TODO Auto-generated method stub
-		return (int) (this.salary - o.salary);
+		return this.id - o.getId();
 	}
 	
 	
-	}
 	
-	
-
-
+}
