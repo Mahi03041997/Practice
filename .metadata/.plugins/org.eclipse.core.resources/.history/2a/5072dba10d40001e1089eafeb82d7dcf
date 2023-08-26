@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean class = " com.spring.collection.Student" name = "student">
+ <property name="id" value = "225"/>
+ <property name="name" value = "Mahi Rajput" />
+ <property name="phoneNumber">
+ <list>
+ <value>9110771054</value>
+ <value>7337475406</value>
+ <value>9441489821</value>
+ </list>
+ </property>
+ <property name="Adress">
+ <set>
+ <value>Ayyagaripeta</value>
+ <value>Sathpally</value>
+ <value>Khammam</value>
+ <value>Telangana</value>
+ </set>
+ </property>
+ 
+ 
+ </bean>
+</beans>

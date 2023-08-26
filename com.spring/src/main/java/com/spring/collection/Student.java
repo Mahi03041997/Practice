@@ -1,0 +1,69 @@
+package com.spring.collection;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class Student {
+private int id;
+private String name;
+private List<String> phoneNumbers;
+private Set<String> Adress;
+private Map<String,String> Course;
+
+
+public Student(int id, String name, List<String> phoneNumbers, Set<String> adress, Map<String, String> course) {
+	super();
+	this.id = id;
+	this.name = name;
+	this.phoneNumbers = phoneNumbers;
+	Adress = adress;
+	Course = course;
+}
+
+
+public Student() {
+	super();
+	// TODO Auto-generated constructor stub
+}
+
+
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public List<String> getPhoneNumbers() {
+	return phoneNumbers;
+}
+public void setPhoneNumbers(List<String> phoneNumbers) {
+	this.phoneNumbers = phoneNumbers;
+}
+public Set<String> getAdress() {
+	return Adress;
+}
+public void setAdress(Set<String> adress) {
+	Adress = adress;
+}
+public Map<String, String> getCourse() {
+	return Course;
+}
+public void setCourse(Map<String, String> course) {
+	Course = course;
+}
+
+
+@Override
+public String toString() {
+	return "Student [id=" + id + ", name=" + name + ", phoneNumbers=" + phoneNumbers + ", Adress=" + Adress
+			+ ", Course=" + Course + "]";
+}
+
+}
